@@ -30,3 +30,7 @@ steps:
       fingerprints:
         - "2048 SHA256:2Ur87hZNYwot6XVwf97ATkYEmLkkFhwDOBGxt260y/E root@ip-172-31-51-19 (RSA)"
     -run: ssh deploy@54.162.47.105 python_app/test.sh
+steps:
+       - run: # Install the AWS CLI if it is not already included in the docker image
+           name: Install awscli 
+           command: sudo pip install awscli
