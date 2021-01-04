@@ -29,5 +29,5 @@ steps:
   - add_ssh_keys:
       fingerprints:
         - "2048 SHA256:2Ur87hZNYwot6XVwf97ATkYEmLkkFhwDOBGxt260y/E root@ip-172-31-51-19 (RSA)"
-    - run: ssh -i "key-pair-pem-file.pem" ubuntu@ec2-54-162-47-105.compute-1.amazonaws.com python_app/test.sh
+    -run: ssh -i "key-pair-pem-file.pem" ubuntu@ec2-54-162-47-105.compute-1.amazonaws.com python_app/test.sh
    
